@@ -22,7 +22,7 @@ elements.passwordField.addEventListener(
 
 function enterJournal() {
   if (auth.login === "mix1979" && auth.password === "Miha8011979") {
-    window.location.href = "dspMinek/pages/mainPage.html";
+    window.location.href = "/dspMinek/pages/mainPage.html";
   } else {
     window.location.href = "/dspMinek/";
     alert("Неправильный логин или пароль");
