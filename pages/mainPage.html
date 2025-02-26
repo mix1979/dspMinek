@@ -10,7 +10,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="../css/pages.css" />
-    <link rel="icon" href="../img/dsp.png">
+  <link rel="icon" href="../img/dsp.png">
 
   <title>Журналы ДСП Минэконом</title>
 </head>
@@ -26,12 +26,7 @@
         Выход
       </button>
     </div>
-    <div class="jurnal-content jurnal-inbox p-2 col-12 d-flex" id="journalInbox">
-      <select class="form-select" aria-label="Пример выбора по умолчанию" id="yearSelect">
-        <option selected>Год</option>
-        <option value="2025">2025</option>
-        <option value="2026">2026</option>
-      </select>
+    <div class="jurnal-content jurnal-inbox p-2 col-12" id="journalInbox">
       <p class="text-center fw-bold mt-2">Входящие</p>
       <table class="table-striped table-hover border col-12">
         <thead class="bg-primary border text-center">
@@ -117,17 +112,17 @@
       <div class="inbox-modal border rounded shadow p-3 d-flex flex-column gap-1">
         <div class="inbox-fields d-flex flex-column gap-1">
           <p class="text-center fw-bold">Новый исходящий</p>
-          <input type="text" class="form-control" placeholder="Дата" id="sendedDate"/>
+          <input type="text" class="form-control" placeholder="Дата" id="sendedDate" />
           <input type="text" class="form-control" placeholder="Откуда поступил документ или исполнитель"
             value="Внутренний" readonly id="sendedInboxFrom" />
           <input type="text" class="form-control" placeholder="Дата и индекс поступившего документа"
             id="sendedDateIndexInbox" />
           <input type="text" class="form-control" placeholder="Вид документа или его краткое содержание"
             id="sendedDescription" />
-          <input type="number" class="form-control" placeholder="Количество экз" id="sendedEkzNumbers"/>
-          <input type="number" class="form-control" placeholder="экз. №" id="sendedEkzNum"/>
-          <input type="number" class="form-control" placeholder="Количество листов в экз" id="sendedLists"/>
-          <input type="text" class="form-control" placeholder="Кому передан на исполнение" id="sendedMaker"/>
+          <input type="number" class="form-control" placeholder="Количество экз" id="sendedEkzNumbers" />
+          <input type="number" class="form-control" placeholder="экз. №" id="sendedEkzNum" />
+          <input type="number" class="form-control" placeholder="Количество листов в экз" id="sendedLists" />
+          <input type="text" class="form-control" placeholder="Кому передан на исполнение" id="sendedMaker" />
         </div>
         <div class="inbox-buttons col d-flex flex-column gap-1">
           <button type="button" class="btn btn-success" id="newSendedSuccessBtn">Сохранить</button>

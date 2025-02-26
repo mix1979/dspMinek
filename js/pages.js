@@ -41,8 +41,7 @@ elements.logoutBtn.addEventListener("click", () => logOut());
 
 const renderInboxTable = async () => {
   let inboxData = [];
-  let year = elements.yearSelect.value;
-  await fetch("https://cute-deserted-bellusaurus.glitch.me/inbox"+year)
+  await fetch("https://cute-deserted-bellusaurus.glitch.me/inbox2025")
     .then((res) => res.json())
     .then((data) => inboxData.push(...data));
 
@@ -71,7 +70,7 @@ const renderInboxTable = async () => {
 const renderSendedTable = async () => {
   let sendedData = [];
   let year = elements.yearSelect.value;
-  await fetch("https://cute-deserted-bellusaurus.glitch.me/sended"+year)
+  await fetch("https://cute-deserted-bellusaurus.glitch.me/sended2025")
     .then((res) => res.json())
     .then((data) => sendedData.push(...data));
 
