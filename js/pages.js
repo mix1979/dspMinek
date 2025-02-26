@@ -69,7 +69,6 @@ const renderInboxTable = async () => {
 
 const renderSendedTable = async () => {
   let sendedData = [];
-  let year = elements.yearSelect.value;
   await fetch("https://cute-deserted-bellusaurus.glitch.me/sended")
     .then((res) => res.json())
     .then((data) => sendedData.push(...data));
