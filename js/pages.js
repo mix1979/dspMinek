@@ -33,7 +33,7 @@ const elements = {
 };
 const logOut = () => {
   sessionStorage.removeItem("auth");
-  window.location.href = "//";
+  window.location.href = "/";
 };
 
 elements.logoutBtn.addEventListener("click", () => logOut());
