@@ -33,7 +33,7 @@ const elements = {
 };
 const logOut = () => {
   sessionStorage.removeItem("auth");
-  window.location.href = "dspMinek/index.html";
+  window.location.href = "index.html";
 };
 
 elements.logoutBtn.addEventListener("click", () => logOut());
