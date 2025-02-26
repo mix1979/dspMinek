@@ -30,7 +30,7 @@ const elements = {
   sendedEkzNum: document.getElementById("sendedEkzNum"),
   sendedLists: document.getElementById("sendedLists"),
   sendedMaker: document.getElementById("sendedMaker"),
-  yearSelect:document.getElementById("yearSelect")
+  yearSelect: document.getElementById("yearSelect"),
 };
 const logOut = () => {
   sessionStorage.removeItem("auth");
@@ -41,7 +41,7 @@ elements.logoutBtn.addEventListener("click", () => logOut());
 
 const renderInboxTable = async () => {
   let inboxData = [];
-  await fetch("https://cute-deserted-bellusaurus.glitch.me/inbox2025")
+  await fetch("https://cute-deserted-bellusaurus.glitch.me/inbox")
     .then((res) => res.json())
     .then((data) => inboxData.push(...data));
 
@@ -70,7 +70,7 @@ const renderInboxTable = async () => {
 const renderSendedTable = async () => {
   let sendedData = [];
   let year = elements.yearSelect.value;
-  await fetch("https://cute-deserted-bellusaurus.glitch.me/sended2025")
+  await fetch("https://cute-deserted-bellusaurus.glitch.me/sended")
     .then((res) => res.json())
     .then((data) => sendedData.push(...data));
 
