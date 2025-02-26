@@ -26,7 +26,12 @@
         Выход
       </button>
     </div>
-    <div class="jurnal-content jurnal-inbox p-2 col-12 " id="journalInbox">
+    <div class="jurnal-content jurnal-inbox p-2 col-12 d-flex" id="journalInbox">
+      <select class="form-select" aria-label="Пример выбора по умолчанию" id="yearSelect">
+        <option selected>Год</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+      </select>
       <p class="text-center fw-bold mt-2">Входящие</p>
       <table class="table-striped table-hover border col-12">
         <thead class="bg-primary border text-center">
