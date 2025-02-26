@@ -154,7 +154,7 @@ const saveNewSended = async () => {
 window.document.addEventListener("DOMContentLoaded", () => {
   let auth = JSON.parse(sessionStorage.getItem("auth"));
   !auth || auth.login !== "mix1979"
-    ? (window.location.href = "/")
+    ? (window.location.href = "/dspMinek/")
     : console.log(auth);
 
   renderInboxTable();

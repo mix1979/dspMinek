@@ -24,7 +24,7 @@ function enterJournal() {
   if (auth.login === "mix1979" && auth.password === "Miha8011979") {
     window.location.href = "pages/mainPage.html";
   } else {
-    window.location.href = "/dspMinek/";
+    window.location.reload();
     alert("Неправильный логин или пароль");
   }
 }
