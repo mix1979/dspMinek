@@ -128,8 +128,7 @@ const saveNewInbox = async () => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(inboxData),
   });
-  elements.inboxModal.classList.add("none");
-  // document.location.reload();
+  document.location.reload();
 };
 
 const saveNewSended = async () => {
@@ -148,8 +147,7 @@ const saveNewSended = async () => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(sendedData),
   });
-  elements.sendedModal.classList.add("none");
-  // document.location.reload();
+  document.location.reload();
 };
 
 window.document.addEventListener("DOMContentLoaded", () => {
@@ -178,10 +176,13 @@ elements.newSendedBtn.addEventListener("click", () => {
 
 elements.newInboxSuccessBtn.addEventListener("click", () => {
   saveNewInbox();
+  elements.inboxModal.classList.add("none");
 });
 
 elements.newSendedSuccessBtn.addEventListener("click", () => {
   saveNewSended();
+  elements.sendedModal.classList.add("none");
+
 });
 
 elements.newInboxCancelBtn.addEventListener("click", () => {
